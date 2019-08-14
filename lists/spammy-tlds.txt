@@ -1,9 +1,9 @@
 # List of TLDs (or SLDs) with a high probability of hosting spam domains *AND A HIGH RISK OF FALSE POSITIVES*.
 # rspamd doesn't provide TLD extraction for mail addresses. The eSLD (effective second level domain) is matched against this list.
 
-/\.br/i
-/\.cn/i
-/\.co/i
-/\.com\.cn/i
-/\.jp/i
-/\.us/i
+/\.br$/i
+/\.cn$/i
+/\.co$/i
+/\.com\.cn$/i
+/\.jp$/i
+/\.us$/i
