@@ -4,6 +4,7 @@ from dataclasses import dataclass
 
 tlds = []
 
+# this file is a stripped down version of the Public Suffix List
 with codecs.open('public_suffix_list.dat.txt', encoding='utf8') as suffix_file:
     for raw_line in suffix_file:
         line = raw_line.strip()
