@@ -12,3 +12,4 @@ cnf['FROM_MUNGAI'] = {
 --     re = string.format('((%s) || (%s)) && (SUBJ_ALL_CAPS)', kinetic1, kinetic2),
 --     score = 2.5
 -- }
+
