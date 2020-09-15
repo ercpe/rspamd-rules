@@ -42,10 +42,17 @@
 /www\.[a-zA-Z0-9]+\.(date|trade)\/[a-zA-Z0-9-_]{6,13}\/[a-zA-Z0-9-_]{13,24}\/[a-zA-Z0-9-_]{40,65}\/[a-zA-Z0-9-_]{80,999}/i SPAM_LINK_7:0.4
 
 
-# SPAM_LINK_8_A
+# SPAM_LINK_8
 # Primarily used in bitcoin/crypto currency spam
 # characteristics:
 # - emails contain at least one link to .../?xtl=<random{120-300}>&eih=<random{,40}>
 # - emails contain at least one link to .../?xul=<random>
 /\?xtl=[a-zA-Z0-9]{100,300}&eih=[a-zA-Z0-9]{20,40}/i SPAM_LINK_8a:0.1
 /\?xul=[a-zA-Z0-9]{70,120}&eih=[a-zA-Z0-9]{20,40}/i SPAM_LINK_8b:0.1
+
+
+# SPAM_LINK_9
+# Primarily used in bitcoin/crypto currency spam
+# - Subdomain of .page.link
+# - Very short path (typically less than 5 chars)
+/\.page\.link\/[a-zA-Z0-9]{1,8}/i
