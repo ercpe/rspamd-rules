@@ -1,3 +1,4 @@
 # List of domains with a high probability of sending spam.
 
 /mungaikihanya\.com$/i
+/onlyone\-invest\.com$/i

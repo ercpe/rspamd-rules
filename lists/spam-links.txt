@@ -56,3 +56,6 @@
 # - Subdomain of .page.link
 # - Very short path (typically less than 5 chars)
 /\.page\.link\/[a-zA-Z0-9]{1,8}/i SPAM_LINK_9:0.4
+
+# Special rule for this persitent spammer
+/onlyone\-invest\.com/.*/i ONLYONE_INVEST:0.4
