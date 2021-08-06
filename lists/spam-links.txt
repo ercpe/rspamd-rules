@@ -57,5 +57,13 @@
 # - Very short path (typically less than 5 chars)
 /\.page\.link\/[a-zA-Z0-9]{1,8}/i SPAM_LINK_9:0.4
 
-# Special rule for this persitent spammer
+# Special rule for this persistent spammer
 /onlyone\-invest\.com/.*/i ONLYONE_INVEST:0.4
+
+
+# MY_SHOPIFY
+# - Subdomain of myshopify.com
+# - Path is /apps/<random>/indexjs.html or apps/<random>/<random>>/index_js.html
+# - The first url parameter *might* always start with "sum"
+/\.myshopify\.com\/apps\/[a-zA-Z0-9]+\/indexjs.html/i MY_SHOPIFY:0.2
+/\.myshopify\.com\/apps\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\/index_js.html/i MY_SHOPIFY:0.2
