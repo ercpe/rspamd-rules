@@ -65,5 +65,5 @@
 # - Subdomain of myshopify.com
 # - Path is /apps/<random>/indexjs.html or apps/<random>/<random>>/index_js.html
 # - The first url parameter *might* always start with "sum"
-/\.myshopify\.com\/apps\/[a-zA-Z0-9]+\/indexjs.html/i MY_SHOPIFY:0.2
-/\.myshopify\.com\/apps\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\/index_js.html/i MY_SHOPIFY:0.2
+/\.myshopify\.com\/apps\/[a-zA-Z0-9]+\/index_?js.html/i MY_SHOPIFY_a:0.2
+/\.myshopify\.com\/apps\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\/index_?js.html/i MY_SHOPIFY_b:0.2
