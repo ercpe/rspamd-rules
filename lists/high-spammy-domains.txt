@@ -2,4 +2,4 @@
 
 /mungaikihanya\.com$/i
 /onlyone\-invest\.com$/i
-/news\.dealscomparer\.com/i
+/news\.dealscomparer\.com$/i
