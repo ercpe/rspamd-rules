@@ -6,8 +6,9 @@ cnf['FROM_MUNGAI'] = {
 }
 
 local re_body_cryptobot = '/.*(crypto|auto|trader|new)bot.*/i{mime}'
+local re_subject_cryptobot = 'Subject=/.*(crypto|auto|trader|new)bot.*/i{header}'
 local re_body_tariff = '/.*tariff.*/i{mime}'
 cnf['BODY_CRYPTOBOT'] = {
-    re = string.format('(%s) && (%s)', re_body_cryptobot, re_body_tariff),
+    re = string.format('((%s) || (%s)) && (%s)', re_body_cryptobot, re_subject_cryptobot, re_body_tariff),
     score = 1.0,
 }
