@@ -19,6 +19,6 @@ cnf['BODY_CRYPTOBOT_LAX'] = {
 }
 
 cnf['RECEIVED_BITCOIN'] = {
-    re = 'Subject=/.*0\\.7495.*(Bitcoin|BTC).*/i{header}',
+    re = 'Subject=/.*0.7495.*(Bitcoin|BTC).*/i{header}',
     score = 1.0,
 }
