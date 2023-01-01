@@ -13,3 +13,12 @@ cnf['BODY_CRYPTOBOT'] = {
     re = string.format('((%s) || (%s)) && ((%s) || (%s))', re_body_cryptobot, re_subject_cryptobot, re_body_tariff, re_body_initial_deposit),
     score = 1.0,
 }
+cnf['BODY_CRYPTOBOT_LAX'] = {
+    re = string.format('((%s) || (%s))', re_body_cryptobot, re_subject_cryptobot),
+    score = 1.0,
+}
+
+cnf['RECEIVED_BITCOIN'] = {
+    re = 'Subject=/.*0\.7495.*(Bitcoin|BTC).*/i{header}',
+    score = 1.0,
+}
