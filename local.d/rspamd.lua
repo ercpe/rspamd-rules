@@ -19,3 +19,13 @@ cnf['RECEIVED_BITCOIN'] = {
     re = 'Subject=/.*0.7495.*(Bitcoin|BTC).*/i{header}',
     score = 1.0,
 }
+
+cnf['FROM_COINBASE'] = {
+    re = 'From=/.*coinbase.*/i{header}',
+    score = 1.0,
+}
+
+cnf['BODY_COINBASE'] = {
+    re = '/.*coinbase.*/i{mime}',
+    score = 1.0,
+}
