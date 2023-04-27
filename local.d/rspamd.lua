@@ -29,3 +29,13 @@ cnf['BODY_COINBASE'] = {
     re = '/.*coinbase.*/i{mime}',
     score = 1.0,
 }
+
+cnf['SUBJECT_TESLA'] = {
+    re = 'Subject=/.*tesla.*/i{header}',
+    score = 0.5,
+}
+
+cnf['BODY_BITCOIN'] = {
+    re = '/.*bitcoin.*/i{mime}',
+    score = 1.0,
+}
