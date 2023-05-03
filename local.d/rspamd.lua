@@ -41,6 +41,6 @@ cnf['BODY_BITCOIN'] = {
 }
 
 cnf['BODY_GOOGLE_DRIVE_LINK'] = {
-    re = '/.*https:\/\/drive\.google\.com\/file\/.*/i{mime}',
+    re = '/.*https:\\/\\/drive\\.google\\.com\\/file\\/.*/i{mime}',
     score = 1.0,
 }
