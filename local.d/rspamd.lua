@@ -47,10 +47,10 @@ cnf['BODY_GOOGLE_DRIVE_LINK'] = {
 
 cnf['BODY_WP_LOGIN'] = {
     re = '/.*wp-login.php.*/i{mime}',
-    score = 1.0,
+    score = 0.0,
 }
 
 cnf['BODY_CRYPTO_KWD'] = {
     re = '/.*BINANCE.*/i{mime}',
-    score = 1.0,
+    score = 0.0,
 }
