@@ -1,0 +1,3 @@
+# List of sender address (From) that violates GDPR and related regulations.
+
+sportsreport@mail.beehiiv.com
